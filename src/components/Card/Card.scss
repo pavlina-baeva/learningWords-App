@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+
+    .card__container {
+        text-align: center;
+        background-color: rgba(248, 227, 205, 0.666);
+        width: 30vw;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 15px;
+    }
+}

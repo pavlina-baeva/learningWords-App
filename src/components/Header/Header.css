@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(192, 237, 112);
+}
+
+.header__a {
+    text-decoration: none;
+    margin: 1.5em;
+}
+
+.header__a:hover {
+    text-decoration: underline;
+}

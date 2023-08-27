@@ -1,0 +1,39 @@
+.wordList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    table {
+        border: solid black 2px;
+        width: 80vw;
+
+        th {
+            background-color: rgba(248, 227, 205, 0.666);
+
+        }
+
+        th,
+        td {
+            border: 1px solid grey;
+            padding: 10px;
+        }
+
+        tr:hover {
+            border: 2px solid rgba(195, 8, 216, 0.666);
+        }
+    }
+
+    .startBtn {
+        border-width: 2px;
+        border-color: rgba(164, 8, 216, 0.666);
+        border-radius: 10px;
+        background-color: rgba(237, 205, 248, 0.666);
+        padding: 10px 25px 10px 25px;
+        margin: 1em;
+    }
+}
+
+.error {
+    border: solid rgb(234, 13, 13);
+}

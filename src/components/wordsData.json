@@ -1,0 +1,36 @@
+{
+    "initialWords": [
+        {
+            "id": "13996",
+            "english": "shotgun",
+            "transcription": "[ˈʃɒtgʌn]",
+            "russian": "бессистемный",
+            "tags": "preintermediate",
+            "tags_json": "[\"preintermediate\"]"
+        },
+        {
+            "id": "13997",
+            "english": "wood",
+            "transcription": "[wʊd]",
+            "russian": "дерево",
+            "tags": "elementary",
+            "tags_json": "[\"elementary\"]"
+        },
+        {
+            "id": "13998",
+            "english": "castle",
+            "transcription": "[kɑːsl]",
+            "russian": "замок",
+            "tags": "elementary",
+            "tags_json": "[\"elementary\"]"
+        },
+        {
+            "id": "13999",
+            "english": "faithful",
+            "transcription": "[ˈfeɪθf(ə)l]",
+            "russian": "верный",
+            "tags": "preintermediate",
+            "tags_json": "[\"preintermediate\"]"
+        }
+    ]
+}
