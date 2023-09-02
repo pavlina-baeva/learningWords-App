@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: rgb(192, 237, 112);
+  width: 100%;
+}
+.header .header__logo {
+  justify-self: flex-start;
+  height: 6vh;
+  margin: 1em;
+}
+.header .header__a {
+  text-decoration: none;
+  margin: 1.5em;
+}
+.header .header__a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './css/Footer.css';
 
 function Footer() {
     return (
@@ -9,8 +9,7 @@ function Footer() {
             <a className="footer__a" href="">Категории слов</a>
             <a className="footer__a" href="">Личный кабинет</a>
             <a className="footer__a" href="">Политика конфиденциальности</a>
-            <a className="footer__a" href="">Помощь</a>
-            <a className="footer__a" href="">Контакты</a>
+            <a className="footer__a" href="">Поддержка</a>
         </div>
     )
 }

@@ -1,0 +1,22 @@
+.endMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  height: 50vh;
+}
+.endMessage .endMessage__logo {
+  height: 15vh;
+}
+.endMessage .endMessage__text {
+  text-align: center;
+}
+.endMessage .endMessage__btn {
+  border: solid 2px;
+  border-color: rgba(8, 147, 216, 0.666);
+  border-radius: 20px;
+  background-color: rgba(205, 226, 248, 0.666);
+  width: fit-content;
+  padding: 10px 25px 10px 25px;
+}/*# sourceMappingURL=EndMessage.css.map */

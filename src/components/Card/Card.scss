@@ -5,11 +5,37 @@
     margin: 1em;
 
     .card__container {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1em;
         background-color: rgba(248, 227, 205, 0.666);
-        width: 30vw;
+        width: 17vw;
+        height: 35vh;
         padding: 1em;
-        margin: 1em;
+        margin: 2em;
         border-radius: 15px;
+        box-shadow: 5px 5px 5px 5px rgba(112, 112, 112, 0.744);
+
+        .card__logo {
+            height: 7vh;
+        }
     }
+
+        .knownBtn {
+            background-color: rgba(13, 179, 13, 0.722);
+            border-radius: 20px;
+            border:0;
+            width:12vw;
+            padding: 10px 25px 10px 25px;
+        }
+
+        .unknownBtn {
+            background-color: rgba(208, 14, 101, 0.779);
+            border-radius: 20px;
+            border:0;
+            width:12vw;
+            padding: 10px 25px 10px 25px;
+        }
 }

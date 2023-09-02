@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import './css/List.css';
-import { initialWords } from '../wordsData.json';
+import Input from '../Input/Input';
+import binLogo from './binLogo.png';
 
-function List() {
-    const [words, setWords] = useState(initialWords);
+
+function List(props) {
+    const { words, setWords } = props;
     const [newWord, setNewWord] = useState('');
     const [newTranscription, setNewTranscription] = useState('');
     const [newRussian, setNewRussian] = useState('');
 
     function addWord() {
+        if (!newWord) {
+            setNewWord(null);
+            return;
+        } 
         const newWords = [...words];
         newWords.push({
             english: newWord,
@@ -38,22 +44,26 @@ function List() {
                                 <td>{word.english}</td>
                                 <td>{word.transcription}</td>
                                 <td>{word.russian}</td>
-                                <td></td>
+                                <td><button className='deleteBtn'><img className='binLogo' src={binLogo}/></button></td>
                             </tr>)
                     }
                     <tr>
-                        <td><input value={newWord} onChange={(e) => setNewWord(e.target.value)}></input></td>
-                        <td><input value={newTranscription} onChange={(e) => setNewTranscription(e.target.value)}></input></td>
-                        <td><input value={newRussian} onChange={(e) => setNewRussian(e.target.value)}></input></td>
+                        <td><Input value={newWord} errorMessage={newWord !== null ? '' : 'Заполните поле'} setValue={(e) => setNewWord(e.target.value)}></Input></td>
+                        <td><Input value={newTranscription} errorMessage={newTranscription !== null ? '' : 'Заполните поле'} setValue={(e) => setNewTranscription(e.target.value)}></Input></td>
+                        <td><Input value={newRussian} errorMessage={newRussian !== null ? '' : 'Заполните поле'} setValue={(e) => setNewRussian(e.target.value)}></Input></td>
                         <td>
                             <button className="addBtn" onClick={addWord}>Добавить</button>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <button className="startBtn">Начать учить</button>
+            <button className="startBtn" onClick={() => window.location.href="/cards"}>Начать учить</button>
         </div>
     )
 }
 
 export default List;
+
+function setNewValue(arg0) {
+    throw new Error('Function not implemented.');
+}
